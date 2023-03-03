@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Exercise 1 </title>
+<style>
+* 
+/* {
+  box-sizing: border-box;
+} */
+/* Create 2 equal columns */
+.column2 {
+  float: left;
+  width: 60%;
+  height: 400px; /* Should be removed. Only for demonstration */
+  text-align: center;  
+}
+.column21 {
+  float: right;
+  position: relative;
+  width: 40%;
+  height: 200px; /* Should be removed. Only for demonstration */
+  text-align: center;
+}
+.center1 { 
+  height: 400px;
+  position: relative;
+}
+.center2 { 
+  height: 200px;
+  position: relative;
+}
+.center1 h2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+}
+.center2 h2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+  <h1 style="text-align: center">Exercise 1</h2>
+  <a href="index.html">
+    <span> Back to exercise list</span>
+  </a>
+  <br>
+  <br>
+  <div class="row">
+      <div class="column2" style="background-color:red;">
+        <div class="center1" >
+            <h2>Height 400px</h2>      
+        </div>
+      </div>
+          <div class="column21" style="background-color:green;">
+            <div class="center2" >
+            <h2>Height 200px</h2>
+            </div>
+          </div>          
+          <div class="column21" style="background-color:blue;">
+            <div class="center2" >
+              <h2>Height 200px</h2>
+            </div>
+          </div>   
+  </div>
+</body>
+</html>

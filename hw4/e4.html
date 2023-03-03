@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 4</title>
+<style>
+/* * {
+  box-sizing: border-box;
+} */
+
+/* Create three equal columns that floats next to each other */
+.column3 {
+  float: left;
+  width: 32.33%;
+  height: 400px; /* Should be removed. Only for demonstration */
+  text-align: center;  
+}
+.center { 
+  height: 400px;
+  position: relative;
+}
+
+.center h2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h2{
+   color: white;     
+}
+</style>
+</head>
+<body>
+  <h1 style="text-align: center">Exercise 4</h1>
+  <a href="index.html">
+    <span> Back to exercise list</span>
+  </a>
+  <br>
+  <br>
+  <div class="row">
+    <div class="column3" style="background-color:red; margin-right: 15px;">  
+      <div class="center">  
+        <h2>Height 400px</h2> 
+      </div>    
+    </div>
+    <div class="column3" style="background-color:green;">
+      <div class="center">  
+        <h2>Height 400px</h2> 
+      </div>   
+    </div>
+    <div class="column3" style="background-color:blue;margin-left:15px">
+      <div class="center">  
+        <h2>Height 400px</h2> 
+      </div>   
+    </div>
+  </div>
+</body>
+</html>
