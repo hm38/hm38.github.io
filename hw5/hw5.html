@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="icon" href="image/amazon-icon.png">
+    <style>
+        body {
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+        .grid-container {
+          display: grid;
+          grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);          
+          padding: 0px;
+        }
+        .grid-item {          
+          padding: 0;
+          font-size: 16px;          
+        }
+        .center {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            height:300px
+        }   
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="margin: 0px";>
+    <div>
+        <a href="https://format.com.vn" alt="Menu1" style="width: 100%" ></a>
+
+    </div>     
+    <h1> Product List</h1>
+    <div class="grid-container">
+            <div class="grid-item">
+                <a href="#">
+                <div class="container">
+                    <img class="image" style="max-width:100%;height:auto;" src="image/1.png"  alt="Handbag Red"> 
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+                    <p style="width: auto; align-items: right;">
+                        <h2>Red Handbag</h2>
+                        <h3>129$</h3>
+                    </p>                  
+                   
+                </a>          
+            
+        </div>
+        <div class="grid-item">
+            <a href="#">
+                <div class="container">
+                    <img style="max-width:100%;height:auto;" src="image/2.png" 
+                    alt="Black Handbag">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+                <p style="width: auto; align-items: left;">
+                    <h2>Black Handbag</h2>
+                    <h3>171$</h3>
+                </p>
+                
+                
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="#">
+                <div class="container">
+                        <img style="max-width:100%;height:auto;" class="center" src="image/3.png"
+                        alt="Fully black">             
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>   
+            </div>
+                <p style="width: auto; align-items: left;">
+                    <h2>Modern Fully Black</h2>
+                    <h3>96$</h3>
+                </p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <div class="container">
+                <a href="#">
+                    <img style="max-width:100%;height:auto;" class="center" src="image/4.png"> 
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+                <p style="width: auto; align-items: left;">
+                    <h2>Skin color Hand bag</h2>
+                    <h3>495$</h3>
+                </p>                            
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="#">
+                <div class="container">
+                    <img style="max-width:100%;height:auto;" class="center" src="image/5.png" 
+                    alt="Brown Handbag">               
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+                <p style="width: auto; align-items: left;">
+                    <h2>Brown Handbag</h2>
+                    <h3>329$</h3>
+                </p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="#">
+                <div class="container">
+                    <img style="max-width:100%;height:auto;" class="center" src="image/6.png" 
+                    alt="Brown Handbag">               
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+                <p style="width: auto; align-items: left;">
+                    <h2>White Handbag</h2>
+                    <h3>109$</h3>
+                </p>
+            </a>
+        </div>                    
+    </div>    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.center { 
+  height: 400px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.column3 {
+  float: left;
+  width: calc(100%/3);
+  height: 400px; /* Should be removed. Only for demonstration */
+  text-align: center;  
+}
+
+</style>
+</head>
+<body>
+
+<h2>Center with position and transform</h2>
+
+<p>In this example, we use positioning and the transform property to vertically and horizontally center the div element:</p>
+<div class="column3">
+<div class="center" >
+  
+  <p>I am vertically and horizontally centered.</p>
+</div>
+</div>
+<div class="column3" class="center" >
+  <p>I am vertically and horizontally centered.</p>
+</div>
+<div class="column3" class="center">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+</body>
+</html>
+
