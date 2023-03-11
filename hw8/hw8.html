@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hw8 - Menu</title>
+    <link rel="icon" href="image/amazon-icon.png">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+             /* padding-left: calc(100%/8); */
+             overflow: hidden;
+            background-color: oldlace;
+        }
+
+        li {
+        float: left;
+        }
+
+        li a {
+        display: block;
+        color: blue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: bold;
+        }
+
+         li a:hover {
+             color: #111;
+        }
+
+        body {
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+        .grid-container {
+          display: grid;
+          grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);          
+          padding: 0px;
+        }
+        .grid-item {          
+          padding: 0;
+          font-size: 16px;          
+        }
+        .center {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            height:300px
+        }   
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+       
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body style="margin: 0px";>
+    <h1 style="text-align: center;">This is homework 8</h1>
+    <div>
+      <ul>
+      <li> 
+          <a href="#">Modern Bag</a> 
+      </li>
+      <li>
+          <a href="#">Traditional Bag</a>
+      </li>
+      <li>
+          <a href="#">Promotion</a>
+      </li>
+      </ul>
+    </div>   
+    <h2 style="text-align: center"> Product List</h2>
+    <div class="grid-container">
+            <div class="grid-item">
+                <a href="#">
+                <div class="container">
+                    <img class="image" style="max-width:100%;height:auto;" src="image/1.png"  alt="Handbag Red"> 
+                </div>
+                <p style="width: auto; align-items: right;">
+                    <h2>Red Handbag</h2>
+                    <h3>129$</h3>
+                </p>                                  
+                </a>                      
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <div class="container">
+                        <img style="max-width:100%;height:auto;" src="image/2.png" 
+                        alt="Black Handbag">                        
+                    </div>
+                    <p style="width: auto; align-items: left;">
+                        <h2>Black Handbag</h2>
+                        <h3>171$</h3>
+                    </p>                           
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <div class="container">
+                            <img style="max-width:100%;height:auto;" class="center" src="image/3.png"
+                            alt="Fully black">                                      
+                    </div>
+                    <p style="width: auto; align-items: left;">
+                        <h2>Modern Fully Black</h2>
+                        <h3>96$</h3>
+                    </p>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                <div class="container">
+                    <img class="image" style="max-width:100%;height:auto;" src="image/4.png"  alt="Handbag Red"> 
+                </div>
+                <p style="width: auto; align-items: right;">
+                    <h2>Skin color Hand bag</h2>
+                    <h3>495$</h3>
+                </p>                                  
+                </a>                      
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                <div class="container">
+                    <img class="image" style="max-width:100%;height:auto;" src="image/5.png"  alt="Handbag Red"> 
+                </div>
+                <p style="width: auto; align-items: right;">
+                    <h2>Brown Handbag</h2>
+                    <h3>329$</h3>
+                </p>                                  
+                </a>                      
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                <div class="container">
+                    <img class="image" style="max-width:100%;height:auto;" src="image/6.png"  alt="Handbag Red"> 
+                </div>
+                <p style="width: auto; align-items: right;">
+                    <h2>White Handbag</h2>
+                    <h3>109$</h3>
+                </p>                                  
+                </a>                      
+            </div>          
+    </div>    
+</body>
+</html>
